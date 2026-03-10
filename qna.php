@@ -55,6 +55,15 @@
       </div>
     </section>
     </section>
+    <section class="container">
+      <?php include "otazky.php"; ?>
+      <?php for($i = 0; $i < count($otazky); $i++); { ?>
+        <div class="accordition">
+          <div clas="question"><?php echo $otazky[$i]; ?></div>
+          <div clas="answer"><?php echo $odpovede[$i]; ?></div>
+        </div>
+      <?php } ?>
+    </section>
   </div>
   </main>
   <footer class="container bg-dark text-white">
