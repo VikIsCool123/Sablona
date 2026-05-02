@@ -1,0 +1,44 @@
+{
+    "portfolios": [
+        {
+            "name": "Web stranka 1",
+            "url": "https://google.com",
+            "image": "portfolio-1"
+        },
+        {
+            "name": "Web stranka 2",
+            "url": "https://alza.sk",
+            "image": "portfolio-2"
+        },
+        {
+            "name": "Web stranka 3",
+            "url": "https://amazon.com",
+            "image": "portfolio-3"
+        },
+        {
+            "name": "Web stranka 4",
+            "url": "https://spacex.com",
+            "image": "portfolio-4"
+        },
+        {
+            "name": "Web stranka 5",
+            "url": "https://instagram.com",
+            "image": "portfolio-5"
+        },
+        {
+            "name": "Web stranka 6",
+            "url": "https://discord.com",
+            "image": "portfolio-6"
+        },
+        {
+            "name": "Web stranka 7",
+            "url": "https://tiktok.com",
+            "image": "portfolio-7"
+        },
+        {
+            "name": "Web stranka 8",
+            "url": "https://x.com",
+            "image": "portfolio-8"
+        }
+    ]
+}
