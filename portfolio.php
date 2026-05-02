@@ -19,13 +19,8 @@
                 </div>
             </section>
               <section class="container container-portfolio">
-                <?php
-                for ($i=1;$i<9;$i++){
-                  echo "<div class='col-25 portfolio text-white text-center' id='portfolio-$i'>";
-                      echo "Web stránka " . $i;
-                  echo "</div>";
-                }
-                ?>
+                <?php include "functions.php"?>
+                <?php getImages();?>
             </section>   
 
         </main>
