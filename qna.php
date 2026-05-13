@@ -80,7 +80,7 @@ $qna = new Qna();
 // Toto je len pre ulohu, inak by som to takto netvoril :)
 $qna->vymazatVsetko();
 $qna->nacitatOtazky();
-
+$otazky_a_odpovede = $qna->vybratVsetko();
 
 ?>
 <!DOCTYPE html>
@@ -111,11 +111,15 @@ $qna->nacitatOtazky();
       </div>
     </section>
       <section class="container">
-        <?php foreach ($qna->vybratVsetko() as $row){ ?>
-          <div class="accordion">
-            <div class="question"><?php echo $row["otazka"];?></div>
-            <div class="answer"><?php echo $row["odpoved"];?></div>
-          </div>
+        <?php if (isset($otazky_a_odpovede) && $otazky_a_odpovede != false) { ?>
+          <?php foreach ($otazky_a_odpovede as $row){ ?>
+            <div class="accordion">
+              <div class="question"><?php echo $row["otazka"];?></div>
+              <div class="answer"><?php echo $row["odpoved"];?></div>
+            </div>
+          <?php } ?>
+        <?php } else { ?>
+          <p>Ziadne otazky a odpovede niesu!</p>
         <?php } ?>
       </section>
     </section>
